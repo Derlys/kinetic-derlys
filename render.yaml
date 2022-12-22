@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: my-kinetic-api
+    name: kinetic-derlys
     plan: free
     numInstances: 1
     healthCheckPath: /api/uptime
@@ -10,11 +10,11 @@ services:
     branch: main
     envVars:
       - key: API_URL
-        value: https://my-kinetic-api.onrender.com/api
+        value: https://kinetic-derlys.onrender.com/api
       - key: AUTH_PASSWORD_ENABLED
         value: true
       - key: AUTH_USERS
-        value: admin|Kinetic1|Admin
+        value: admin|Kinetic2|Admin
       - key: APP_1_NAME
         value: App 1
       - key: APP_1_FEE_PAYER_SECRET
